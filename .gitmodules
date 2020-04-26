@@ -1,0 +1,3 @@
+[submodule "cloud-game-engine-frontend"]
+	path = cloud-game-engine-frontend
+	url = git@github.com:Mangiang/cloud-game-engine-frontend.git
