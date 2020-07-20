@@ -26,6 +26,6 @@ dependencies:
 - name: nginx-ingress-controller
   repository: https://charts.bitnami.com/bitnami
   version: 5.3.19
-#- name: rabbitmq
-#  repository: https://charts.bitnami.com/bitnami
-#  version: 6.25.5
+# - name: rabbitmq
+#   repository: https://charts.bitnami.com/bitnami
+#   version: 6.25.5

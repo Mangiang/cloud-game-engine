@@ -2,5 +2,8 @@ dependencies:
 - name: nginx-ingress-controller
   repository: https://charts.bitnami.com/bitnami
   version: 5.3.19
-digest: sha256:cafb2547f6322f373cb7fa346db10c96913bc91967dc0fdd16e8987e62c2e19e
-generated: "2020-04-26T21:31:04.1001744-04:00"
+- name: rabbitmq
+  repository: https://charts.bitnami.com/bitnami
+  version: 6.25.5
+digest: sha256:78762e4b938f4142700e0fa30731385d3c101462c220a80c37bdaabac2880558
+generated: "2020-07-15T19:41:47.149027-04:00"
