@@ -13,7 +13,7 @@ data:
     #!/bin/sh
     START_FLAG=/opt/bitnami/rabbitmq/var/lib/rabbitmq/.start
     if [ -f ${START_FLAG} ]; then
-        rabbitmq-diagnostics -q check_port_connectivity && rabbitmq-diagnostics -q node_health_check
+        rabbitmq-diagnostics -q check_port_connectivity
         RESULT=$?
         if [ $RESULT -ne 0 ]; then
           rabbitmq-diagnostics -q status
