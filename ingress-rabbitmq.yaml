@@ -1,0 +1,42 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: rabbitmq
+    meta.helm.sh/release-namespace: default
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  creationTimestamp: "2020-07-20T17:48:02Z"
+  generation: 7
+  labels:
+    app: rabbitmq
+    app.kubernetes.io/managed-by: Helm
+    chart: rabbitmq-6.28.1
+    heritage: Helm
+    release: rabbitmq
+  name: rabbitmq
+  namespace: default
+  resourceVersion: "1270040"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/ingresses/rabbitmq
+  uid: 2b5a46e7-2ff3-472b-87ab-de023b6f0383
+spec:
+  rules:
+    - host: localhost
+      http:
+        paths:
+          - backend:
+              serviceName: rabbitmq
+              servicePort: 5672
+            path: /rabbitmq/amqp()
+          - backend:
+              serviceName: rabbitmq
+              servicePort: 15674
+            path: /rabbitmq/(ws).*
+          - backend:
+              serviceName: rabbitmq
+              servicePort: 15672
+            path: /(rabbitmq/management[/]?.*)
+status:
+  loadBalancer:
+    ingress:
+      - ip: 192.168.65.3
