@@ -10,3 +10,6 @@
 [submodule "plugins/cloud-game-engine-game-view"]
 	path = plugins/cloud-game-engine-game-view
 	url = git@github.com:Mangiang/cloud-game-engine-game-view.git
+[submodule "examples/cloud-game-engine-example-cube-move"]
+	path = examples/cloud-game-engine-example-cube-move
+	url = git@github.com:Mangiang/cloud-game-engine-example-cube-move.git
