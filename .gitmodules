@@ -7,3 +7,6 @@
 [submodule "plugins/cloud-game-engine-logger"]
 	path = plugins/cloud-game-engine-logger
 	url = git@github.com:Mangiang/cloud-game-engine-logger.git
+[submodule "plugins/cloud-game-engine-game-view"]
+	path = plugins/cloud-game-engine-game-view
+	url = git@github.com:Mangiang/cloud-game-engine-game-view.git
